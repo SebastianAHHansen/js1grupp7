@@ -1,13 +1,37 @@
 
 // Testdata
+//-------------------------------------------------------------------------
 
 const playlistTest = [];
-playlistTest.push(new Song('Britta', 'One more time', 'pop'));
-playlistTest.push(new Song('Hazelnut hobo', 'Covfef', 'rock'));
-playlistTest.push(new Song('Dagge', 'Greedy thief', 'country'));
-playlistTest.push(new Song('Locomotive Lars', 'chucka cho', 'alternative'));
-playlistTest.push(new Song('Helms deep', 'into the mountain', 'indie'));
-playlistTest.push(new Song('Abracadabra', 'pick a card', 'pop'));
+
+const outputDiv = document.getElementById('output');
+
+const outputTest = document.createElement('div');
+outputTest.classList.add('output-test');
+
+outputTest.innerText = 'Test';
+/* outputDiv.appendChild(outputTest); */
+
+function Songtest(artist, song, genre){
+    this.artist = artist,
+    this.song = song,
+    this.genre = genre
+}
+
+playlistTest.push(new Songtest('Britta', 'One more time', 'pop'));
+playlistTest.push(new Songtest('Hazelnut hobo', 'Covfef', 'rock'));
+playlistTest.push(new Songtest('Dagge', 'Greedy thief', 'country'));
+playlistTest.push(new Songtest('Locomotive Lars', 'chucka cho', 'alternative'));
+playlistTest.push(new Songtest('Helms deep', 'into the mountain', 'indie'));
+playlistTest.push(new Songtest('Abracadabra', 'pick a card', 'pop'));
+playlistTest.push(new Songtest('Meli Montana', 'gumminos', 'hiphop'));
+playlistTest.push(new Songtest('Lens-Amir', 'photograph', 'indie'));
+playlistTest.push(new Songtest('Sebbe af Hans', 'Hansen of sweden', 'classical'));
+playlistTest.push(new Songtest('Tendonitis Tove', 'Strech', 'country'));
+
+
+
+//------------------------------------------------------------------------
 
 
 //MELI: class Song to create new objects
@@ -43,13 +67,13 @@ class Song {
   });
   
   //MELI: Cleans text output with click of a button
-  cleanInput.addEventListener("click", function cleanInput() {
+  /* cleanInput.addEventListener("click", function cleanInput() {
     document.getElementById("enterArtist").value = "";
     document.getElementById("enterSong").value = "";
     document.getElementById("enterGenre").value = "";
-  });
+  }); */
   
   //MELI: Cleans text input with click of a button
-  cleanOutput.addEventListener("click", function cleanOutput() {
+  /* cleanOutput.addEventListener("click", function cleanOutput() {
     document.getElementById("output").innerHTML = "";
-  });
+  }); */
