@@ -4,41 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="/style.css"></style>
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
     <title>Grupp 7</title>
 </head>
 <body>
+<!----------------- Header ----------------->
     <header>
-        <h1>Create a playlist</h1>
-
-        <!--------- Inputfält ---------->
-        <div class="textInput">
-            <label for="enterArtist"></label>
-            <input type="text" placeholder="Enter artist" id="enterArtist"><br><br>
-
-            <label for="enterSong"></label>
-            <input type="text" placeholder="Enter song" id="enterSong"><br><br>
-
-    <!--       <label for="enterAlbum"></label>
-            <input type="text" placeholder="Enter album" id="enterAlbum"><br><br>
-    --> 
-            <label for="enterGenre"></label>
-            <input type="text" placeholder="Enter genre" id="enterGenre"><br><br>
-
-            <button id="addPlaylist" onclick="addToPlayList()";>Add to your playlist</button>
-        </div>
+    <h1>Create your playlist</h1>
     </header>
-    <div id="output">
-        
+    <!----------------- Inputfält ----------------->
+    <div id="textInput">
+      <label for="enterArtist"></label>
+      <input
+        type="text"
+        placeholder="Enter artist"
+        id="enterArtist"
+      /><br /><br />
+      <label for="enterSong"></label>
+      <input type="text" placeholder="Enter song" id="enterSong" /><br /><br />
+      <label for="enterAlbum"></label>
+      <input
+        type="text"
+        placeholder="Enter album"
+        id="enterAlbum"
+      /><br /><br />
+      <label for="enterGenre"></label>
+      <input
+        type="text"
+        placeholder="Enter genre"
+        id="enterGenre"
+      /><br /><br />
+    </div>
+    <!----------------- Knapp AddToPlaylist ----------------->
+    <button id="addPlaylist" onclick="addToPlaylist()" ;>
+      Add to your playlist
+    </button>
+
+    <!----------------- Playlist ----------------->
+    <div id="playlist">
+      <label for="userInput"></label>
+      <textarea
+        id="userText"
+        cols="30"
+        rows="7"
+        placeholder="Playlist"
+      ></textarea>
     </div>
 
-    <footer>
+    <!----------------- Knapp Save&Share ----------------->
+    <button id="sharePlaylist">Save and share your playlist</button>
 
+
+  <!----------------- Footer ----------------->
+  <footer id="myFooter"></footer>
 
     </footer>
 </body>
-
-
 
 </html>
