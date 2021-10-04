@@ -10,7 +10,7 @@ const outputTest = document.createElement('div');
 outputTest.classList.add('output-test');
 
 outputTest.innerText = 'Test';
-/* outputDiv.appendChild(outputTest); */
+outputDiv.appendChild(outputTest);
 
 function Songtest(artist, song, genre){
     this.artist = artist,
@@ -29,6 +29,24 @@ playlistTest.push(new Songtest('Lens-Amir', 'photograph', 'indie'));
 playlistTest.push(new Songtest('Sebbe af Hans', 'Hansen of sweden', 'classical'));
 playlistTest.push(new Songtest('Tendonitis Tove', 'Strech', 'country'));
 
+console.log(playlistTest);
+
+function sortPlaylist(el) {
+  // learned this here: https://www.youtube.com/watch?v=0d76_2sksWY
+  playlistTest.sort((a,b) => {
+    if(a[el].toLowerCase() < b[el].toLowerCase()) {
+      return -1;
+    }
+    if(a[el].toLowerCase() > b[el].toLowerCase()) {
+      return 1;
+    }
+    return 0;
+  });
+}
+
+sortPlaylist('genre');
+
+console.log(playlistTest);
 
 
 //------------------------------------------------------------------------
