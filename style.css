@@ -1,19 +1,81 @@
+/* Övergripande styling för hela HTML-dokumentet */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   border-radius: 10px;
 }
 
-header {
+/* Design header */
+header,
+h1 {
   position: relative;
   background-color: rgb(55, 67, 34);
   margin-bottom: 20px;
+  color: rgb(131, 131, 131);
 }
 
-header {
-  color: rgb(131, 131, 131);
+/* Body design */
+body {
+  background-color: rgb(55, 67, 34);
+}
+
+/* Spellista design */
+#playlist,
+#userText {
+  color: #fff;
+  border-radius: 10px;
+  pointer-events: all;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  border: none;
+}
+#userText {
+  background: rgba(222, 222, 222, 0.2);
+}
+
+/* Sökfältsdesign */
+#enterArtist,
+#enterSong,
+#enterAlbum,
+#enterGenre {
+  color: #fff;
+  background: rgba(222, 222, 222, 0.2);
+  border-radius: 10px;
+  pointer-events: all;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 2px;
+  border: none;
+}
+
+#enterArtist:hover,
+#enterSong:hover,
+#enterAlbum:hover,
+#enterGenre:hover {
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+/* Knappdesign */
+button {
+  color: #fff;
+  background: rgba(222, 222, 222, 0.2);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 2px 20px;
+  box-shadow: 0 0 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: black;
+  transition: 0.5s ease-in-out;
 }
