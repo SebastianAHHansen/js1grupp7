@@ -108,7 +108,7 @@ class Song {
   function printSongs() {
    
       playList.forEach((item, i) => {
-      songOutput += `<p id="song">${item.songInfo()}"<p id="">`;
+      songOutput += `<p id="song">${item.songInfo()}"<p id="">`<i class="fas fa-times-circle"></i>;
       });
       output1.innerHTML = songOutput;
   }
