@@ -9,6 +9,7 @@
     rel="stylesheet"/>
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d072926b66.js"crossorigin="anonymous"></script>
     <title>Grupp 7</title>
 </head>
 <body>
@@ -26,12 +27,12 @@
       /><br /><br />
       <label for="enterSong"></label>
       <input type="text" placeholder="Enter song" id="enterSong" /><br /><br />
-      <label for="enterAlbum"></label>
+      <!-- <label for="enterAlbum"></label>
       <input
         type="text"
         placeholder="Enter album"
         id="enterAlbum"
-      /><br /><br />
+      /><br /><br /> -->
       <label for="enterGenre"></label>
       <input
         type="text"
@@ -39,13 +40,16 @@
         id="enterGenre"
       /><br /><br />
     </div>
-    <!----------------- Knapp AddToPlaylist ----------------->
-    <button id="addPlaylist" onclick="addToPlaylist()" ;>
+    <!----------------- Button AddToPlaylist ----------------->
+    <button id="addPlaylist">
       Add to your playlist
     </button>
+    
 
+    <!------------------Buttons to empty input and output-->
+    <button id="cleanOutput" value="Clean text">Clean text</button>
     <!----------------- Playlist ----------------->
-    <div id="playlist">
+<!--     <div id="playlist">
       <label for="userInput"></label>
       <textarea
         id="userText"
@@ -53,18 +57,23 @@
         rows="7"
         placeholder="Playlist"
       ></textarea>
-    </div>
+    </div> -->
 
     <!----------------- Knapp Save&Share ----------------->
-    <button id="sharePlaylist">Save and share your playlist</button>
+    <!-- <button id="sharePlaylist">Save and share your playlist</button> -->
 
-    <div id="output">
-        
-    </div>
-  <!----------------- Footer ----------------->
-  <footer id="myFooter"></footer>
+    
+    <div id="output"></div>
+    <div id="output1"></div>
 
+    
+    <!----------------- Footer ----------------->
+    <footer id="myFooter">
+      <h5>
+        Made by: Amir Nabizadeh, Meli Åkerman, Sebastian Hansen & Tove Brandt
+      </h5>
     </footer>
+
 </body>
 
 </html>
